@@ -13,12 +13,13 @@ export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'bn' }, { lang: 'ur' }, { lang: 'si' }];
 }
 
-export default async function LangHome({ params }: { params: { lang: string } }) {
-  const dict = await getDictionary(params.lang);
+export default async function LangHome({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <div className="min-h-screen bg-light-gray flex flex-col font-sans">
-      <Header dict={dict} currentLang={params.lang} />
+      <Header dict={dict} currentLang={lang} />
       <main className="flex-grow">
         <Hero dict={dict} />
         <Countries dict={dict} />
