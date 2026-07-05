@@ -70,6 +70,15 @@ export default function Countries({ dict }: { dict: any }) {
               </div>
             )}
 
+            {dict.professions.languageRequirement && (
+              <div className="mt-6 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm">
+                <p className="text-amber-900 font-medium text-lg flex items-start sm:items-center">
+                  <span className="mr-3 text-2xl block mt-1 sm:mt-0">🗣️</span>
+                  <span>{dict.professions.languageRequirement}</span>
+                </p>
+              </div>
+            )}
+
             {dict.professions.masseuse && (
               <div className="mt-16 bg-gradient-to-r from-pink-50 to-rose-50 rounded-3xl p-8 sm:p-12 shadow-lg border border-pink-100 flex flex-col md:flex-row items-center gap-10">
                 <div className="flex-1">
