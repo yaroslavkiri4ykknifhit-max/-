@@ -8,7 +8,7 @@ export default function Countries({ dict }: { dict: any }) {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{dict.countries.title}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">{dict.countries.desc}</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {dict.countries.list.map((country: string, index: number) => {
             const flags = [
               "https://flagcdn.com/bd.svg", // Bangladesh
