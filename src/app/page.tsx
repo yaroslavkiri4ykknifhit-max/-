@@ -36,12 +36,13 @@ export default function RootRedirect() {
         if (browserLang === 'ur') targetLang = 'ur';
       }
 
-      // Используем Next.js router, который сам знает про basePath
-      router.replace(`/${targetLang}`);
+      const isGitHubPages = window.location.hostname.includes('github.io');
+      const basePath = isGitHubPages ? '/Budeya' : '';
+      window.location.replace(`${basePath}/${targetLang}`);
     };
 
     detectAndRedirect();
-  }, [router]);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-light-gray">

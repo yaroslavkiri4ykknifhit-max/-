@@ -6,12 +6,11 @@ import { useRouter, usePathname } from 'next/navigation';
 
 export default function Header({ dict, currentLang }: { dict: any, currentLang: string }) {
   const [isLangOpen, setIsLangOpen] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
 
   const changeLanguage = (lang: string) => {
-    // router сам подставит basePath
-    router.replace(`/${lang}`);
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const basePath = isGitHubPages ? '/Budeya' : '';
+    window.location.replace(`${basePath}/${lang}`);
   };
 
   return (
