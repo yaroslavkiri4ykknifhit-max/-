@@ -70,10 +70,11 @@ export default function Countries({ dict }: { dict: any }) {
               controls
               playsInline
               preload="none"
-              poster="./images/hero.jpg"
+              poster="./images/video-poster.png"
               className="w-full h-auto aspect-video object-cover"
-              src="./videos/promo-video.mp4" 
-            >  Your browser does not support the video tag.
+              src="./videos/promo-video.mp4"
+            >
+              Your browser does not support the video tag.
             </video>
           </div>
         </div>
