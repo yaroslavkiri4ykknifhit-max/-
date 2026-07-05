@@ -15,25 +15,17 @@ export default function RootRedirect() {
         const data = await res.json();
         const country = data.country_code;
 
-        if (['RU', 'BY', 'KZ', 'UA'].includes(country)) {
-          targetLang = 'ru';
-        } else if (country === 'IN') {
-          targetLang = 'hi';
+        if (country === 'BD') {
+          targetLang = 'bn';
         } else if (country === 'PK') {
           targetLang = 'ur';
+        } else if (country === 'LK') {
+          targetLang = 'si';
         } else {
-           // Fallback to browser lang
-           const browserLang = navigator.language.slice(0, 2).toLowerCase();
-           if (['ru', 'be', 'uk', 'kk'].includes(browserLang)) targetLang = 'ru';
-           if (browserLang === 'hi') targetLang = 'hi';
-           if (browserLang === 'ur') targetLang = 'ur';
+           targetLang = 'en';
         }
       } catch (e) {
-        // Fallback to browser lang if IP fetch fails
-        const browserLang = navigator.language.slice(0, 2).toLowerCase();
-        if (['ru', 'be', 'uk', 'kk'].includes(browserLang)) targetLang = 'ru';
-        if (browserLang === 'hi') targetLang = 'hi';
-        if (browserLang === 'ur') targetLang = 'ur';
+        targetLang = 'en';
       }
 
       const isGitHubPages = window.location.hostname.includes('github.io');

@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import { getDictionary } from '@/dictionaries';
 
 export function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'ru' }, { lang: 'hi' }, { lang: 'ur' }];
+  return [{ lang: 'en' }, { lang: 'bn' }, { lang: 'ur' }, { lang: 'si' }];
 }
 
 export default async function LangHome({ params }: { params: { lang: string } }) {

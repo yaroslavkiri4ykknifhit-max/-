@@ -10,18 +10,17 @@
     "agency": "Recruitment Agency",
     "brand": "«BUDEYA»",
     "title": "Legal Employment in Belarus",
-    "desc": "We guarantee 100% legal employment without risks or fines. We handle all paperwork, visas, and adaptation — filling your vacancies turnkey in 30-40 days.",
+    "desc": "We guarantee 100% legal employment without risks or hidden fees. We handle all paperwork, work visas, and local adaptation — providing complete, end-to-end employment solutions within 30-40 days.",
     "button": "Our Services"
   },
   "countries": {
     "title": "Countries We Recruit From",
-    "desc": "We officially partner with recruitment agencies and accept candidates from the following countries, providing full visa support and local coordination.",
+    "desc": "We officially partner with leading international recruitment agencies and accept candidates from the following countries, providing full visa support and seamless local coordination.",
     "list": [
       "Bangladesh",
-      "India",
+      "Sri Lanka",
       "Nigeria",
-      "Pakistan",
-      "Indonesia"
+      "Pakistan"
     ]
   },
   "professions": {

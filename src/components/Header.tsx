@@ -52,21 +52,29 @@ export default function Header({ dict, currentLang }: { dict: any, currentLang: 
             <div className="relative">
               <button 
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-1 text-sm font-bold text-gray-800 hover:text-primary bg-gray-100 px-3 py-1.5 rounded-md"
+                className="flex items-center gap-1.5 text-sm font-bold text-gray-800 hover:text-primary bg-gray-100 px-3 py-1.5 rounded-md"
               >
-                <Globe size={16} />
+                <span className="text-base leading-none">
+                  {currentLang === 'bn' ? '🇧🇩' : currentLang === 'ur' ? '🇵🇰' : currentLang === 'si' ? '🇱🇰' : '🇳🇬'}
+                </span>
                 <span className="uppercase">{currentLang}</span>
                 <ChevronDown size={14} />
               </button>
               {isLangOpen && (
-                <div className="absolute top-full right-0 mt-2 w-24 bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden flex flex-col z-50">
-                  {['en', 'ru', 'hi', 'ur'].map(lang => (
+                <div className="absolute top-full right-0 mt-2 w-28 bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden flex flex-col z-50">
+                  {[
+                    { code: 'en', flag: '🇳🇬', label: 'EN' },
+                    { code: 'bn', flag: '🇧🇩', label: 'BN' },
+                    { code: 'ur', flag: '🇵🇰', label: 'UR' },
+                    { code: 'si', flag: '🇱🇰', label: 'SI' }
+                  ].map(lang => (
                     <button 
-                      key={lang} 
-                      onClick={() => changeLanguage(lang)}
-                      className="px-4 py-2 text-sm text-left hover:bg-primary hover:text-white font-bold uppercase transition-colors"
+                      key={lang.code} 
+                      onClick={() => changeLanguage(lang.code)}
+                      className="px-4 py-2.5 text-sm text-left hover:bg-primary hover:text-white font-bold transition-colors flex items-center gap-3"
                     >
-                      {lang}
+                      <span className="text-lg leading-none">{lang.flag}</span>
+                      <span>{lang.label}</span>
                     </button>
                   ))}
                 </div>
