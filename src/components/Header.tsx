@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { ChevronDown, Box, Globe, Phone, Mail, Send, MessageCircle, MessageSquare } from 'lucide-react';
+import { ChevronDown, Globe, Phone, Mail, Send, MessageCircle, MessageSquare } from 'lucide-react';
 
 export default function Header({ dict, currentLang }: { dict: any, currentLang: string }) {
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -29,8 +29,8 @@ export default function Header({ dict, currentLang }: { dict: any, currentLang: 
       <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white shadow-md">
-              <Box size={24} />
+            <div className="bg-primary text-white p-2 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center">
+              <img src="/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
             </div>
             <div>
               <h1 className="font-bold text-xl leading-tight text-gray-900">{dict.hero.brand}</h1>

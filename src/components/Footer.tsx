@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, MapPin, Clock } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 
 export default function Footer({ dict }: { dict: any }) {
   return (
@@ -8,8 +8,8 @@ export default function Footer({ dict }: { dict: any }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
-                <Box size={24} />
+              <div className="bg-primary text-white p-2 rounded-xl">
+                <img src="/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
               </div>
               <div>
                 <h2 className="font-bold text-xl leading-tight text-gray-900">{dict.hero.brand}</h2>
