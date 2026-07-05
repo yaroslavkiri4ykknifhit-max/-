@@ -1,0 +1,65 @@
+import React from 'react';
+import { Box, MapPin, Clock } from 'lucide-react';
+
+export default function Footer({ dict }: { dict: any }) {
+  return (
+    <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
+                <Box size={24} />
+              </div>
+              <div>
+                <h2 className="font-bold text-xl leading-tight text-gray-900">{dict.hero.brand}</h2>
+                <p className="text-xs text-gray-500 uppercase tracking-wider">{dict.hero.agency}</p>
+              </div>
+            </div>
+            <p className="text-gray-500 max-w-sm leading-relaxed mb-6">
+              {dict.footer.org}
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">{dict.nav.services}</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-gray-500 hover:text-primary transition-colors">{dict.services.b2b.title}</a></li>
+              <li><a href="#" className="text-gray-500 hover:text-primary transition-colors">{dict.services.b2c.title}</a></li>
+              <li><a href="#" className="text-gray-500 hover:text-primary transition-colors">{dict.nav.faq}</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">{dict.footer.contacts}</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="text-primary mt-1 flex-shrink-0" size={18} />
+                <span className="text-gray-500">
+                  <strong className="text-gray-700 block">{dict.footer.addressTitle}</strong>
+                  {dict.footer.address}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock className="text-primary mt-1 flex-shrink-0" size={18} />
+                <span className="text-gray-500">
+                  <strong className="text-gray-700 block">{dict.footer.hoursTitle}</strong>
+                  {dict.footer.hours}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} {dict.hero.brand}. {dict.footer.copyright}
+          </p>
+          <div className="flex gap-6">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors text-sm">{dict.footer.privacy}</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "advantages": "Advantages",
+    "countries": "Target Countries",
+    "services": "Services",
+    "faq": "FAQ",
+    "requestCall": "Request a Call"
+  },
+  "hero": {
+    "agency": "Recruitment Agency",
+    "brand": "«BUDEYA»",
+    "title": "Legal Employment in Belarus",
+    "desc": "We guarantee 100% legal employment without risks or fines. We handle all paperwork, visas, and adaptation — filling your vacancies turnkey in 30-40 days.",
+    "button": "Our Services"
+  },
+  "countries": {
+    "title": "Countries We Recruit From",
+    "desc": "We officially partner with recruitment agencies and accept candidates from the following countries, providing full visa support and local coordination.",
+    "list": [
+      "Bangladesh",
+      "India",
+      "Nigeria",
+      "Pakistan",
+      "Indonesia"
+    ]
+  },
+  "professions": {
+    "title": "In-Demand Professions",
+    "categories": [
+      {
+        "icon": "🧑‍🌾",
+        "name": "Agriculture",
+        "jobs": [
+          "Livestock breeders",
+          "Milkmaids",
+          "Vegetable growers",
+          "Gardeners (including greenhouses and parks)"
+        ]
+      },
+      {
+        "icon": "📦",
+        "name": "Warehouse and Production",
+        "jobs": [
+          "Laborers",
+          "Loaders",
+          "Stackers",
+          "Packers",
+          "Labelers",
+          "Assistants",
+          "Order pickers",
+          "Conveyor workers (with training)",
+          "Markers"
+        ]
+      },
+      {
+        "icon": "🏗️",
+        "name": "Construction and Repair",
+        "jobs": [
+          "Bricklayers",
+          "Plasterers",
+          "Painters",
+          "Facade workers",
+          "Electric welders",
+          "Gas welders"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "desc": "Comprehensive legal and organizational support for labor migration to the Republic of Belarus.",
+    "b2b": {
+      "title": "For Recruitment Agencies",
+      "subtitle": "(B2B Partnership)",
+      "list": [
+        "Official cooperation agreement",
+        "Obtaining quotas and permits from Belarusian employers",
+        "Processing work invitations for your candidates",
+        "Assistance in obtaining work visas",
+        "Airport pickup and transfer",
+        "Accommodation arrangement and on-site coordination"
+      ]
+    },
+    "b2c": {
+      "title": "For Job Seekers",
+      "subtitle": "(Employment)",
+      "list": [
+        "Consultation on job selection and legal status",
+        "Assistance with document legalization (translation, apostille)",
+        "Processing of work permit (for 1 year, extendable)",
+        "Temporary residential registration",
+        "Assistance with medical examinations and obtaining a Tax ID",
+        "Protection of labor rights in the Republic of Belarus"
+      ]
+    }
+  },
+  "stages": {
+    "title": "Stages of Employment",
+    "steps": [
+      {
+        "title": "APPLICATION",
+        "desc": "You submit an application, provide your passport and resume (work experience details)"
+      },
+      {
+        "title": "INTERVIEW",
+        "desc": "We conduct a video interview, assess your skills, and offer a vacancy with salary details"
+      },
+      {
+        "title": "PAPERWORK & VISA",
+        "desc": "We process an official work invitation and help you obtain a work visa in your country"
+      },
+      {
+        "title": "ARRIVAL IN BELARUS",
+        "desc": "You arrive in Minsk. We meet you at the airport, arrange transfer, and check you into housing"
+      },
+      {
+        "title": "LEGALIZATION",
+        "desc": "We help you pass a medical exam, get temporary registration, and a 1-year work permit"
+      },
+      {
+        "title": "WORK & SUPPORT",
+        "desc": "You start working. We stay in touch and protect your rights throughout the entire contract"
+      }
+    ]
+  },
+  "about": {
+    "title": "Why Choose Us?",
+    "desc1": "We understand how important it is for partner agencies to be confident in the safety of their candidates, and for job seekers to get a reliable job. Our mission is to make the relocation and employment process as transparent and fast as possible.",
+    "desc2": "We handle all bureaucratic procedures with the Department of Citizenship and Migration in Belarus.",
+    "button": "Get a Consultation",
+    "features": [
+      {
+        "title": "100% Legal",
+        "desc": "All documents are processed in strict accordance with the Law of the Republic of Belarus. No grey schemes."
+      },
+      {
+        "title": "Time Saving",
+        "desc": "We take care of all the paperwork and interactions with migration services. You just receive the ready invitation."
+      },
+      {
+        "title": "Risk Protection",
+        "desc": "We guarantee employment with verified employers. We eliminate the risks of deportation and fines."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything partners and candidates need to know.",
+    "list": [
+      {
+        "q": "Which professions are in highest demand?",
+        "a": "There is a high demand in Belarus for construction workers (masons, carpenters, concrete workers), agricultural workers, and manufacturing/warehouse staff."
+      },
+      {
+        "q": "Who pays for the candidate's flight?",
+        "a": "Flights and consular fees are usually paid by the candidate or the sending agency. The Belarusian employer pays for the processing of permits within the country."
+      },
+      {
+        "q": "Where will the workers live?",
+        "a": "Employers provide dormitories that meet all sanitary standards. We personally monitor the living conditions and help candidates adapt."
+      },
+      {
+        "q": "How fast is the work invitation processed?",
+        "a": "On average, the process of issuing a work permit and a special invitation takes 3 to 5 weeks from the moment the full package of documents is submitted."
+      }
+    ]
+  },
+  "contact": {
+    "title1": "Leave a request —",
+    "title2": "we will contact you",
+    "subtitle": "Start a partnership or find a job in Belarus today",
+    "button": "Contact Us"
+  },
+  "footer": {
+    "org": "LLC «INCOStechno». Legal labor migration services in the Republic of Belarus. Official partnership with foreign agencies.",
+    "contacts": "Contacts",
+    "addressTitle": "Our Address",
+    "address": "Republic of Belarus, 220118, Minsk, Shishkin st., 20/1-33",
+    "hoursTitle": "Working Hours:",
+    "hours": "Daily from 09.00 to 18.00",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  }
+}
