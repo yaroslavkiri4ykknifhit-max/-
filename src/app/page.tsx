@@ -36,11 +36,12 @@ export default function RootRedirect() {
         if (browserLang === 'ur') targetLang = 'ur';
       }
 
-      window.location.href = `${window.location.pathname.startsWith('/Budeya') ? '/Budeya' : ''}/${targetLang}`;
+      // Используем Next.js router, который сам знает про basePath
+      router.replace(`/${targetLang}`);
     };
 
     detectAndRedirect();
-  }, []);
+  }, [router]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-light-gray">

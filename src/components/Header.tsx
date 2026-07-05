@@ -10,8 +10,8 @@ export default function Header({ dict, currentLang }: { dict: any, currentLang: 
   const pathname = usePathname();
 
   const changeLanguage = (lang: string) => {
-    const basePath = pathname.startsWith('/Budeya') ? '/Budeya' : '';
-    window.location.href = `${basePath}/${lang}`;
+    // router сам подставит basePath
+    router.replace(`/${lang}`);
   };
 
   return (
