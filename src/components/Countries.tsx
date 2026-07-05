@@ -81,7 +81,7 @@ export default function Countries({ dict }: { dict: any }) {
                 <div className="w-full md:w-1/3 shrink-0">
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500 aspect-[3/4]">
                     <img 
-                      src="./images/masseuse.jpg" 
+                      src="/Budeya/images/masseuse.jpg" 
                       alt="Professional Masseuse" 
                       className="w-full h-full object-cover"
                     />
@@ -99,9 +99,9 @@ export default function Countries({ dict }: { dict: any }) {
               controls
               playsInline
               preload="none"
-              poster="./images/video-poster.png"
+              poster="/Budeya/images/video-poster.png"
               className="w-full h-auto aspect-video object-cover"
-              src="./videos/promo-video.mp4"
+              src="/Budeya/videos/promo-video.mp4"
             >
               Your browser does not support the video tag.
             </video>

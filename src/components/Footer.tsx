@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Clock } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer({ dict, lang }: { dict: any, lang?: string }) {
   const privacyLink = lang ? `/${lang}/privacy` : '/privacy';
@@ -11,7 +12,7 @@ export default function Footer({ dict, lang }: { dict: any, lang?: string }) {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="bg-primary text-white p-2 rounded-xl">
-                <img src="/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
+                <img src="/Budeya/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
               </div>
               <div>
                 <h2 className="font-bold text-xl leading-tight text-gray-900">{dict.hero.brand}</h2>
@@ -58,7 +59,7 @@ export default function Footer({ dict, lang }: { dict: any, lang?: string }) {
             &copy; {new Date().getFullYear()} {dict.footer.org}
           </p>
           <div className="flex gap-4">
-            <a href={privacyLink} className="text-gray-500 hover:text-primary transition-colors text-sm">{dict.footer.privacy}</a>
+            <Link href={privacyLink} className="text-gray-500 hover:text-primary transition-colors text-sm">{dict.footer.privacy}</Link>
           </div>
         </div>
       </div>

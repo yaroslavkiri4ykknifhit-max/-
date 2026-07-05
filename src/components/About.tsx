@@ -10,7 +10,7 @@ export default function About({ dict }: { dict: any }) {
           <div className="flex-1 relative w-full aspect-square max-w-lg">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary-light rounded-[2.5rem] transform -rotate-3 scale-105 -z-10"></div>
             <img 
-              src="./images/about.jpg" 
+              src="/Budeya/images/about.jpg" 
               alt="Team discussing" 
               className="w-full h-full object-cover rounded-[2.5rem] shadow-2xl relative z-10 border-4 border-white"
             />
