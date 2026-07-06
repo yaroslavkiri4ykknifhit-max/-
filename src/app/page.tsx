@@ -28,9 +28,7 @@ export default function RootRedirect() {
         targetLang = 'en';
       }
 
-      const isGitHubPages = window.location.hostname.includes('github.io');
-      const basePath = isGitHubPages ? '/Budeya' : '';
-      window.location.replace(`${basePath}/${targetLang}`);
+      window.location.replace(`/${targetLang}`);
     };
 
     detectAndRedirect();

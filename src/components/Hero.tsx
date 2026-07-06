@@ -40,7 +40,7 @@ export default function Hero({ dict }: { dict: any }) {
           <div className="relative w-full max-w-lg aspect-square">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10 blur-sm"></div>
             <img 
-              src="/Budeya/images/hero.jpg" 
+              src="/images/hero.jpg" 
               alt="Partnership" 
               className="w-full h-full object-cover rounded-[3rem] shadow-2xl border-4 border-white"
             />

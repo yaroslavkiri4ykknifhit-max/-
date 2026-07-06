@@ -8,9 +8,7 @@ export default function Header({ dict, currentLang }: { dict: any, currentLang: 
   const [isLangOpen, setIsLangOpen] = useState(false);
 
   const changeLanguage = (lang: string) => {
-    const isGitHubPages = window.location.hostname.includes('github.io');
-    const basePath = isGitHubPages ? '/Budeya' : '';
-    window.location.replace(`${basePath}/${lang}`);
+    window.location.replace(`/${lang}`);
   };
 
   return (
@@ -33,7 +31,7 @@ export default function Header({ dict, currentLang }: { dict: any, currentLang: 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="bg-primary text-white p-2 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center">
-              <img src="/Budeya/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
+              <img src="/logo.svg" alt="BUDEYA Logo" className="h-6 w-auto brightness-0 invert" />
             </div>
             <div>
               <h1 className="font-bold text-xl leading-tight text-gray-900">{dict.hero.brand}</h1>

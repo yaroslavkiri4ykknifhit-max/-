@@ -90,7 +90,7 @@ export default function Countries({ dict }: { dict: any }) {
                 <div className="w-full md:w-1/3 shrink-0">
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500 aspect-[3/4]">
                     <img 
-                      src="/Budeya/images/masseuse.jpg" 
+                      src="/images/masseuse.jpg" 
                       alt="Professional Masseuse" 
                       className="w-full h-full object-cover"
                     />
@@ -118,19 +118,19 @@ export default function Countries({ dict }: { dict: any }) {
             
             {/* Main Promo Video */}
             <div className="snap-center shrink-0 w-[80vw] sm:w-[600px] md:w-[800px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50 ring-1 ring-black/5 bg-gray-900">
-              <video controls playsInline preload="none" poster="/Budeya/images/video-poster.png" className="w-full h-auto aspect-video object-cover" src="/Budeya/videos/promo-video.mp4" />
+              <video controls playsInline preload="none" poster="/images/video-poster.png" className="w-full h-auto aspect-video object-cover" src="/videos/promo-video.mp4" />
             </div>
 
             {/* All other videos */}
             {[
-              { id: 2, src: '/Budeya/videos/video-2.mp4', poster: '/Budeya/images/video-poster-2.png' },
-              { id: 3, src: '/Budeya/videos/video-3.mp4', poster: '/Budeya/images/video-poster-3.jpeg' },
-              { id: 4, src: '/Budeya/videos/video-4.mov', poster: '/Budeya/images/video-poster-4.jpg' },
-              { id: 5, src: '/Budeya/videos/video-5.mov', poster: '/Budeya/images/video-poster-5.jpg' },
-              { id: 6, src: '/Budeya/videos/video-6.mov', poster: '/Budeya/images/video-poster-6.jpg' },
-              { id: 7, src: '/Budeya/videos/video-7.mov', poster: '/Budeya/images/video-poster-7.jpg' },
-              { id: 8, src: '/Budeya/videos/video-8.mov', poster: '/Budeya/images/video-poster-8.jpg' },
-              { id: 9, src: '/Budeya/videos/video-9.mp4', poster: '/Budeya/images/video-poster-9.jpg' },
+              { id: 2, src: '/videos/video-2.mp4', poster: '/images/video-poster-2.png' },
+              { id: 3, src: '/videos/video-3.mp4', poster: '/images/video-poster-3.jpeg' },
+              { id: 4, src: '/videos/video-4.mov', poster: '/images/video-poster-4.jpg' },
+              { id: 5, src: '/videos/video-5.mov', poster: '/images/video-poster-5.jpg' },
+              { id: 6, src: '/videos/video-6.mov', poster: '/images/video-poster-6.jpg' },
+              { id: 7, src: '/videos/video-7.mov', poster: '/images/video-poster-7.jpg' },
+              { id: 8, src: '/videos/video-8.mov', poster: '/images/video-poster-8.jpg' },
+              { id: 9, src: '/videos/video-9.mp4', poster: '/images/video-poster-9.jpg' },
             ].map((v) => (
               <div key={v.id} className="snap-center shrink-0 w-[70vw] sm:w-[400px] md:w-[500px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-white/50 ring-1 ring-black/5 bg-gray-900 aspect-video">
                 <video controls playsInline preload="none" poster={v.poster} className="w-full h-full object-cover" src={v.src} />
@@ -140,7 +140,7 @@ export default function Countries({ dict }: { dict: any }) {
             {/* All photos */}
             {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
               <div key={`photo-${num}`} className="snap-center shrink-0 w-[70vw] sm:w-[400px] md:w-[500px] rounded-[2rem] overflow-hidden shadow-xl border-4 border-white/50 ring-1 ring-black/5 relative group aspect-video">
-                 <img src={`/Budeya/images/gallery-${num}.jpg`} alt={`Agency Life ${num}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                 <img src={`/images/gallery-${num}.jpg`} alt={`Agency Life ${num}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
             ))}
 
