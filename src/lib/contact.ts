@@ -9,6 +9,7 @@ const whatsappMessages: Record<Language, string> = {
   bn: "Hello BUDEYA, we represent a recruitment agency and would like to discuss a B2B partnership.",
   ur: "Hello BUDEYA, we represent a recruitment agency and would like to discuss a B2B partnership.",
   si: "Hello BUDEYA, we represent a recruitment agency and would like to discuss a B2B partnership.",
+  ru: "Здравствуйте BUDEYA, мы представляем кадровое агентство и хотели бы обсудить B2B партнерство.",
 };
 
 export function getWhatsAppMessage(language: string) {

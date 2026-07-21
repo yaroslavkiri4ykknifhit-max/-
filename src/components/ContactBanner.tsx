@@ -15,7 +15,7 @@ export default function ContactBanner({ dict, currentLang }: { dict: any, curren
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center text-white shadow-2xl relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/contact-bg.jpg')] opacity-20 mix-blend-overlay bg-cover bg-center"></div>
+          <div className="absolute inset-0 bg-[url(/images/contact-bg.jpg)] opacity-20 mix-blend-overlay bg-cover bg-center"></div>
           
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
