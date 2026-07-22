@@ -26,6 +26,7 @@ export default function VisitorModal({ dict, lang }: { dict: any; lang: string }
 
   const handleAgencySelect = () => {
     localStorage.setItem('visitorType', 'agency');
+    window.dispatchEvent(new CustomEvent('visitorTypeChanged', { detail: 'agency' }));
     setIsOpen(false);
   };
 
@@ -35,6 +36,7 @@ export default function VisitorModal({ dict, lang }: { dict: any; lang: string }
 
   const handleClose = () => {
     localStorage.setItem('visitorType', 'jobSeeker');
+    window.dispatchEvent(new CustomEvent('visitorTypeChanged', { detail: 'jobSeeker' }));
     setIsOpen(false);
   };
 
